@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p, label, .row{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    width: 100%;
+
+    transition: 0.4s;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.container .nave{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    z-index: 111;
+}
+.container .nave h2{
+    position: relative;
+    font-family: 'dancing script';
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+    
+}
+.container .nave span{
+    font-family: 'dancing script';
+}
+.container .nave h2 i{
+    display: none;
+}
+.container .nave span span{
+    color: yellow;
+    font-family: 'dancing script';
+}
+.container .menu ul{
+    position: relative;
+    list-style: none;
+    margin-right:0px 130px;
+    text-decoration: none;
+    width: 100%;
+}
+.container .menu ul li{
+    position:relative;
+    padding: 25px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    
+}
+li::before{
+    content: "";
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    height: 1.5px;
+    width:0;
+    transition: 0.3s ease-in-out;
+}
+li:hover::before{
+    width: 100%;
+}
+.menu a{
+    text-decoration: none;
+}
+
+
+/* <-------------------homepage-----------> */
+ .container .homepage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 2  0px;
+}
+.container .homepage .text {
+    position: relative;
+    width: 100%;
+    padding: 20px 90px;
+}
+.container .homepage .text h1{
+    position: relative;
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.container .homepage .text p{
+    color: #fff;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+.container .homepage .text h2{
+    color: #fff;
+}
+.container .homepage .text .colorchange{
+color: yellow;
+}
+.container .homepage .text .btn {
+    position: relative;
+    width: 100%;
+}
+.container .homepage .text .btn button{
+    position: relative;
+    padding: 9px 35px;
+    margin-bottom: 10px;
+    background-color: yellow;
+    border-radius:25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .homepage .text .btn button:hover{
+    background-color: #fff;
+}
+.container .homepage .text .btn i{
+    font-weight:bold;
+    margin: 0 5px;
+}
+.container .homepage .text .icon{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    top: 10px;
+}
+.container .homepage .text .icon i{
+    position: relative;
+    color: #fff;
+    display: flex;
+    width: 30px ;
+    height: 30px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    align-items: center;
+    justify-content: center;  
+    font-size: 1.2em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container .homepage .icon a{
+    list-style: none;
+    text-decoration: none;
+}
+.container .homepage .text .icon i:hover{
+    background-color: yellow;
+    color: #000;
+}
+
+
+.container .homepage .img{
+    position: relative;
+    width: 100%;
+    height: 500px;  
+    text-align: right;
+    
+}
+.container .homepage .img img{
+    position: relative;
+    width:auto;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+hr{
+    border: 3px solid grey;
+}
+
+/* <-------------aboutpage----------> */
+.aboutpage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aboutpage .information{
+    position: relative;
+    width: 100%;
+}
+.aboutpage .info-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutpage .info-box img{
+    position: relative;
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: yellow;
+}
+.aboutpage .info-box  h1{
+    position: relative;
+    color: aliceblue;
+    margin-right: 250px;
+    font-size: 45px;
+}
+.aboutpage .info-box  h3{
+    position: relative;
+    height: 30px;
+    color:rgb(204, 204, 25);
+    margin-right: 230px;
+}
+.aboutpage .skill-box{
+    position: relative;
+    width: 100%;
+}
+.aboutpage .skill-box h2{
+    position: relative;
+    margin: 40px;
+}
+.aboutpage .skill-box .skill{
+    position: relative;
+    width: 100%;
+    margin: 40px;
+}
+.aboutpage .skill-box .skill .progress{
+    position: relative;
+    width: 80%;
+    height: 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+.aboutpage .skill-box .skill .progress .progress-bar{
+    width: 80%;
+    position: relative;
+    background-color: yellow;
+    height: 10px;
+    border-radius: 10px;
+}
+.aboutpage .skill-box .skill .progress .progress-bar-css{
+    width: 70%;
+    position: relative;
+    background-color: yellow;
+    height: 10px;
+    border-radius: 10px;
+}
+.aboutpage .skill-box .skill .progress .progress-bar-js{
+    width: 75%;
+    position: relative;
+    background-color: yellow;
+    height: 10px;
+    border-radius: 10px;
+}
+.aboutpage .skill-box .skill .progress .progress-bar-bt{
+    width: 60%;
+    position: relative;
+    background-color: yellow;
+    height: 10px;
+    border-radius: 10px;
+}
+.aboutpage .skill-box .skill .progress .progress-bar-react{
+    width: 30%;
+    position: relative;
+    background-color: yellow;
+    height: 10px;
+    border-radius: 10px;
+}
+.aboutpage .skill span{
+    color: aliceblue;
+    top: -5px;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.aboutpage .about-text{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+.aboutpage .about-text h1{
+    position: relative;
+    font-weight: bold;
+    font-size:50px;
+    margin-bottom: 20px;
+}
+.aboutpage .about-text .text{
+    font-size: 1em;
+}
+.aboutpage .about-text .details{
+    position: relative;
+    margin-top: 40px;
+}
+.aboutpage .about-text .details p{
+    position: relative;
+    height: 50px;
+    color: aliceblue;
+    font-size: 0.9em;
+}
+.aboutpage .about-text .details span{
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* <----------project-section-------------> */
+.project-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+.project-section .projects{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+}
+.project-section h1{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    top: 30px;
+}
+.project-section .project1{
+    position: relative;
+    width: 320px;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px  #fff;
+    transition: 0.4s;
+    /* padding: 10px; */
+}
+.project-section .project1:hover{
+    transform: scale(1.1);
+}
+.project-section .project1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-section .project1 h2{
+    position: relative;
+    font-size:1.1em;
+    padding:  10px;
+    font-weight: bold;
+}
+.project-section .project1 p{
+    position: relative;
+    font-size: 0.8em;
+    color: aliceblue;
+    padding: 5px;
+}
+/* <---------------------contact-------------> */
+
+.contact-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: #000;
+}
+.contact-section .contact-info{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+.contact-section .contact-info .contact-details{
+    position: relative;
+    width: 100%;
+}
+.contact-section .contact-icons{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.contact-section .contact-info h1{
+    position: relative;
+    font-size: 5em;
+    margin-bottom: 40px;
+    -webkit-text-stroke: 1px ;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+}
+.contact-section .contact-info h1 span{
+    -webkit-text-stroke: 0px;
+    color: white;
+}
+
+.contact-section .contact-info .icon1{
+    position: relative;
+    display: flex;
+    gap: 40px;
+    
+    margin: 20px 0px;
+    margin-bottom: 30px;
+}
+.contact-section .contact-info .icon1 i{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    justify-content: center;
+    text-align:center ;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    color: yellow;
+    margin-bottom: 30px;
+}
+.contact-section .contact-info .icon3{
+    position: relative;
+    display: flex;
+    gap: 15px;
+}
+.contact-section .contact-info .icon3 i{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: aliceblue;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+.contact-section .contact-info .icon3 i:hover{
+    background-color: yellow;
+    color: #000;
+}
+
+.contact-section .input-msg{
+    position: relative;
+    width: 60%;
+    padding: 10px;
+    background: none;
+}
+.contact-section .input-msg input{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding:15px 10px;
+    margin: 10px 0px;
+    border: 1.5px solid white;
+    background: none;
+    outline: none;
+    font-size: 1.1em;
+}
+.contact-section .input-msg input:focus{
+    border-color: greenyellow;
+}
+.contact-section .input-msg input::placeholder{
+    color: #d7d6d6;
+}
+.contact-section .input-msg textarea{
+    position: relative;
+    width: 100%;
+    height:150px;
+    border: 1.5px solid white;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    background: none;
+    font-size: 1.1em;
+}
+.contact-section .input-msg textarea::placeholder{
+    color: #d6d6d6;
+}
+.contact-section .btn button{
+    position: relative;
+    padding: 14px 70px;
+    background-color: yellow;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.contact-section .btn button:hover{
+    background-color:#fff;
+    color: #000;
+}
+/* ========================resumesection========== */
+
